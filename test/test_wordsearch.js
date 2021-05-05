@@ -35,4 +35,10 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+
+  it("should return Undefined if the array is empty", ()=> {
+    const result = wordSearch([], "cats")
+    assert.isUndefined(result);
+  })
+  
 });
